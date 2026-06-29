@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie Bluel — Portfolio architecte | Diaby Madiba</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav proj-nav scrolled">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo">DM<span>.</span></a>
+    <ul class="nav__links">
+      <li><a href="../index.html#about">À propos</a></li>
+      <li><a href="../index.html#skills">Compétences</a></li>
+      <li><a href="../index.html#projects">Projets</a></li>
+      <li><a href="../index.html#contact" class="nav__cta">Me contacter</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="proj-hero">
+  <div class="container">
+    <a href="../index.html#projects" class="proj-back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      Retour aux projets
+    </a>
+    <div class="proj-tags">
+      <span class="proj-tag">JavaScript</span>
+      <span class="proj-tag">DOM</span>
+      <span class="proj-tag">API REST</span>
+      <span class="proj-tag">Fetch</span>
+      <span class="proj-tag">Modal</span>
+    </div>
+    <h1 class="proj-hero__title">Sophie Bluel — Portfolio d'architecte</h1>
+    <p class="proj-hero__desc">Développement du site portfolio dynamique d'une architecte d'intérieur : manipulation du DOM, consommation d'API REST, authentification et gestion des œuvres via une modale.</p>
+    <div class="proj-actions">
+      <a href="https://diabymadiba-hash.github.io/Portfolio-architecte-sophie-bluel-master/" target="_blank" rel="noopener" class="proj-btn proj-btn--blue">
+        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Voir le site live
+      </a>
+      <a href="https://github.com/diabymadiba-hash/Portfolio-architecte-sophie-bluel-master" target="_blank" rel="noopener" class="proj-btn proj-btn--ghost">
+        <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="proj-content">
+  <div class="container">
+    <div class="proj-layout">
+
+      <div>
+        <div class="proj-mockup" style="background:linear-gradient(135deg,#1e293b,#334155,#475569)">🏛️</div>
+
+        <div class="proj-section">
+          <h2>Contexte du projet</h2>
+          <p>Sophie Bluel est un projet de la formation OpenClassrooms centré sur la programmation JavaScript côté client. J'ai pris en main une base de code HTML/CSS existante pour y ajouter toute la dynamique : récupération des projets depuis une API, filtrage par catégorie, page de connexion sécurisée et interface d'administration permettant d'ajouter ou supprimer des œuvres sans recharger la page.</p>
+        </div>
+
+        <div class="proj-section">
+          <h2>Objectifs</h2>
+          <div class="proj-feats">
+            <div class="proj-feat"><span>🎯</span><span>Manipuler le DOM dynamiquement avec JavaScript</span></div>
+            <div class="proj-feat"><span>🎯</span><span>Consommer une API REST avec Fetch (GET, POST, DELETE)</span></div>
+            <div class="proj-feat"><span>🎯</span><span>Implémenter une page de connexion avec JWT</span></div>
+            <div class="proj-feat"><span>🎯</span><span>Créer une modale d'administration fonctionnelle</span></div>
+            <div class="proj-feat"><span>🎯</span><span>Gérer les événements et la navigation sans rechargement</span></div>
+            <div class="proj-feat"><span>🎯</span><span>Persister le token dans le localStorage</span></div>
+          </div>
+        </div>
+
+        <div class="proj-section">
+          <h2>Compétences développées</h2>
+          <div class="proj-feats">
+            <div class="proj-feat"><span>✓</span><span>Manipulation avancée du DOM (createElement, appendChild, innerHTML)</span></div>
+            <div class="proj-feat"><span>✓</span><span>Fetch API : requêtes asynchrones avec async/await</span></div>
+            <div class="proj-feat"><span>✓</span><span>Gestion de l'authentification et des tokens JWT côté client</span></div>
+            <div class="proj-feat"><span>✓</span><span>Création d'une modale avec upload d'image (FormData)</span></div>
+            <div class="proj-feat"><span>✓</span><span>Filtrage dynamique de contenu par catégorie</span></div>
+            <div class="proj-feat"><span>✓</span><span>Gestion des erreurs et retours utilisateur</span></div>
+          </div>
+        </div>
+
+        <div class="proj-section">
+          <h2>Résultats</h2>
+          <p>Le site affiche dynamiquement les projets depuis l'API, les filtre par catégorie en temps réel, et propose une interface administrateur complète après connexion. L'ajout et la suppression d'œuvres sont répercutés instantanément sans rechargement de page. Ce projet a été le déclic pour ma maîtrise de JavaScript asynchrone.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="side-card">
+          <div class="side-card__title">Stack technique</div>
+          <div class="tech-list">
+            <div class="tech-item"><span>🟨</span> JavaScript ES6+</div>
+            <div class="tech-item"><span>🔗</span> Fetch API</div>
+            <div class="tech-item"><span>📄</span> DOM API</div>
+            <div class="tech-item"><span>🔐</span> JWT (localStorage)</div>
+            <div class="tech-item"><span>📤</span> FormData (upload)</div>
+            <div class="tech-item"><span>🌐</span> HTML5 / CSS3</div>
+          </div>
+        </div>
+        <div class="side-card">
+          <div class="side-card__title">Informations</div>
+          <div class="info-list">
+            <div class="info-row info-row--green"><span>Statut</span><span>Terminé ✓</span></div>
+            <div class="info-row"><span>Formation</span><span>OpenClassrooms</span></div>
+            <div class="info-row"><span>Type</span><span>JavaScript / API</span></div>
+            <div class="info-row"><span>Déploiement</span><span>GitHub Pages</span></div>
+          </div>
+        </div>
+        <div class="side-card">
+          <div class="side-card__title">Lien live</div>
+          <a href="https://diabymadiba-hash.github.io/Portfolio-architecte-sophie-bluel-master/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--blue);word-break:break-all;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Voir la démo →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__logo">DM<span>.</span></div>
+    <p class="footer__copy">© 2025 Diaby Madiba — <a href="../index.html" style="color:inherit;text-decoration:underline">Retour au portfolio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
