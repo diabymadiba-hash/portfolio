@@ -318,6 +318,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .project-card--featured .project-card__title { font-size: 1.05rem; }
 .project-card--featured:hover { border-color: transparent; box-shadow: 0 8px 32px rgba(37,99,235,.18), 0 0 0 2px var(--blue-border); transform: translateY(-6px); }
 
+/* ── Thumb images ── */
+.project-card__thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Proj mockup image ── */
+.proj-mockup { position: relative; overflow: hidden; }
+.proj-mockup img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
+}
+
 /* ── Simple card: no overlay hover ── */
 .project-card__thumb--no-hover .project-card__overlay { display: none; }
 
