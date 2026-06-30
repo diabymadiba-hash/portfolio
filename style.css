@@ -264,6 +264,23 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .tc-amber  { color: #fcd34d; }
 .tc-green  { color: #4ade80; }
 
+/* ── Menu Maker : documents hero ── */
+.proj-docs { margin-top: 4px; }
+.proj-docs-label { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: #64748b; margin-bottom: 12px; }
+.proj-docs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.proj-btn--doc { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); color: #e2e8f0; justify-content: flex-start; font-size: .82rem; }
+.proj-btn--doc:hover { background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.3); color: #fff; transform: translateY(-2px); }
+.proj-btn--doc svg { flex-shrink: 0; }
+
+/* ── Menu Maker : documents side card ── */
+.docs-list { display: flex; flex-direction: column; gap: 7px; }
+.doc-item { display: flex; align-items: center; gap: 9px; padding: 9px 11px; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 8px; font-size: .8rem; font-weight: 600; color: var(--text); transition: all var(--t); }
+.doc-item:hover { border-color: var(--blue-border); color: var(--blue); background: var(--blue-light); }
+.doc-item svg { flex-shrink: 0; color: var(--text-muted); }
+.doc-item:hover svg { color: var(--blue); }
+.doc-item span { flex: 1; }
+.doc-item__dl { margin-left: auto; }
+
 /* ── Badge "Projet phare" ── */
 .badge-phare {
   position: absolute;
