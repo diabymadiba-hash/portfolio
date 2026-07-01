@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 
 /* Menu mobile */
 const navToggle = document.getElementById('navToggle');
-const navMenu = document.querySelector('.nav__links');
+const navMenu = document.querySelector('.nav-liens');
 navToggle.addEventListener('click', () => {
   navToggle.classList.toggle('open');
   navMenu.classList.toggle('open');
@@ -26,7 +26,7 @@ navMenu.querySelectorAll('a').forEach(a => {
 
 /* Lien actif selon la section visible */
 const sections = document.querySelectorAll('section[id]');
-const navLinks  = document.querySelectorAll('.nav__links a');
+const navLinks  = document.querySelectorAll('.nav-liens a');
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(s => {
@@ -48,7 +48,7 @@ reveals.forEach(el => revealObserver.observe(el));
 /* ===== BARRES DE COMPÉTENCES ===== */
 
 /* Applique la largeur depuis data-level au chargement de la page */
-document.querySelectorAll('.skill-fill[data-level]').forEach(bar => {
+document.querySelectorAll('.barre-niveau[data-level]').forEach(bar => {
   bar.style.width = bar.dataset.level + '%';
 });
 
@@ -82,7 +82,7 @@ form.addEventListener('submit', e => {
     return;
   }
 
-  const btn = form.querySelector('.form__submit');
+  const btn = form.querySelector('.form-submit');
   btn.textContent = 'Envoi en cours…';
   btn.disabled = true;
 
@@ -96,5 +96,5 @@ form.addEventListener('submit', e => {
 
 function showStatus(msg, type) {
   formStatus.textContent = msg;
-  formStatus.className = 'form__status form__status--' + type;
+  formStatus.className = 'form-statut form-statut-' + type;
 }
