@@ -131,7 +131,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .projets-groupe-ligne { flex: 1; height: 1px; background: var(--border); }
 .grille-projets-phares { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 48px; }
 .grille-projets { display: flex; flex-wrap: wrap; gap: 20px; }
-.grille-projets .carte-projet { flex: 1 1 calc(25% - 20px); min-width: 220px; }
+.grille-projets .carte-projet { flex: 1 1 calc(25% - 20px); min-width: 220px; border: 1px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 12px; }
+.grille-projets .carte-image img { border-radius: 12px 12px 0 0; }
 .carte-projet { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; transition: all var(--t); display: flex; flex-direction: column; color: inherit; }
 .carte-projet:hover { border-color: var(--blue-border); box-shadow: var(--shadow); transform: translateY(-5px); }
 .carte-image { aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; font-size: 3rem; position: relative; overflow: hidden; }
