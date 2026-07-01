@@ -37,6 +37,14 @@ window.addEventListener('scroll', () => {
   });
 });
 
+/* ===== ANIMATIONS D'ENTRÉE AU SCROLL ===== */
+
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+}, { threshold: 0.12 });
+reveals.forEach(el => revealObserver.observe(el));
+
 /* ===== BARRES DE COMPÉTENCES ===== */
 
 /* Applique la largeur depuis data-level au chargement de la page */
