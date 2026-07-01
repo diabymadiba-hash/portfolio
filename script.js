@@ -12,15 +12,15 @@ window.addEventListener('scroll', () => {
 
 /* Menu mobile */
 const navToggle = document.getElementById('navToggle');
-const navMobile = document.getElementById('navMobile');
+const navMenu = document.querySelector('.nav__links');
 navToggle.addEventListener('click', () => {
   navToggle.classList.toggle('open');
-  navMobile.classList.toggle('open');
+  navMenu.classList.toggle('open');
 });
-navMobile.querySelectorAll('a').forEach(a => {
+navMenu.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
     navToggle.classList.remove('open');
-    navMobile.classList.remove('open');
+    navMenu.classList.remove('open');
   });
 });
 
