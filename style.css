@@ -88,7 +88,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero-photo { width: 280px; height: 280px; border-radius: 50%; background: linear-gradient(135deg, #2563eb, #7c3aed, #06b6d4); padding: 4px; }
 .photo-cercle { width: 100%; height: 100%; border-radius: 50%; background: #0f172a; overflow: hidden; display: flex; align-items: center; justify-content: center; }
 .photo-cercle img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; transform: scale(1.1) translate(4%, 0%); }
-.photo-initiales { font-size: 3.5rem; font-weight: 800; color: #fff; }
+.photo-initiales { display: none; font-size: 3.5rem; font-weight: 800; color: #fff; }
+.photo-initiales.photo-initiales-visible { display: flex; }
+.avatar-img-hidden { display: none; }
 .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; padding-top: 32px; border-top: 1px solid rgba(255, 255, 255, .08); }
 .stat-valeur { font-size: 1.7rem; font-weight: 800; color: #fff; line-height: 1; }
 .stat-label { font-size: .72rem; color: #64748b; margin-top: 3px; }
@@ -155,6 +157,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .carte-projet-phare .carte-titre { font-size: 1.05rem; }
 .carte-projet-phare:hover { border-color: transparent; box-shadow: 0 8px 32px rgba(37, 99, 235, .18), 0 0 0 2px var(--blue-border); transform: translateY(-6px); }
 .carte-image-statique .carte-survol { display: none; }
+.carte-image-kasa { background: linear-gradient(135deg, #7f1d1d, #dc2626, #f87171); }
+.carte-image-grimoire { background: linear-gradient(135deg, #14532d, #16a34a, #4ade80); }
+.carte-image-booki { background: linear-gradient(135deg, #0369a1, #0ea5e9, #38bdf8); }
+.carte-image-sophie-bluel { background: linear-gradient(135deg, #1e293b, #334155, #475569); }
+.carte-image-nina-carducci { background: linear-gradient(135deg, #1c1917, #44403c, #78716c); }
 .carte-pied-liens { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .carte-lien-github { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 7px; color: var(--text-muted); border: 1px solid var(--border); background: var(--bg-alt); transition: all var(--t); flex-shrink: 0; }
 .carte-lien-github:hover { color: var(--blue); border-color: var(--blue-border); background: var(--blue-light); }
@@ -263,6 +270,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .doc-item:hover svg { color: var(--blue); }
 .doc-item span { flex: 1; }
 .doc-telecharger { margin-left: auto; }
+.lien-demo-laterale { display: flex; align-items: center; gap: 8px; font-size: .85rem; font-weight: 600; color: var(--main-color); word-break: break-all; }
+.lien-demo-laterale i { font-size: 14px; }
+.footer-lien-retour { color: inherit; text-decoration: underline; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 960px) {

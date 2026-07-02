@@ -18,7 +18,7 @@
 .page-btn-contour:hover { border-color: var(--main-color); color: var(--main-color); }
 .page-contenu { padding-block: 64px; }
 .page-colonnes { display: grid; grid-template-columns: 1fr 280px; gap: 40px; align-items: start; }
-.page-apercu { border-radius: var(--radius); aspect-ratio: 16/10; margin-bottom: 32px; position: relative; overflow: hidden; background: var(--bg-alt); border: 1px solid var(--border); }
+.page-apercu { border-radius: var(--radius); aspect-ratio: 16/10; margin-bottom: 32px; position: relative; overflow: hidden; background: linear-gradient(135deg, #1c1917, #44403c, #78716c); border: 1px solid var(--border); }
 .page-apercu img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: inherit; display: block; }
 .page-bloc { margin-bottom: 32px; }
 .page-bloc h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }

@@ -78,8 +78,8 @@
         <div class="hero-photo">
           <div class="photo-cercle">
             <img src="public/avatar.jpg" alt="Diaby Madiba"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="photo-initiales" style="display:none">DM</div>
+              onerror="this.classList.add('avatar-img-hidden');this.nextElementSibling.classList.add('photo-initiales-visible')">
+            <div class="photo-initiales">DM</div>
           </div>
         </div>
 
@@ -281,7 +281,7 @@
         <div class="grille-projets-phares">
 
           <a href="projets/kasa.html" class="carte-projet carte-projet-phare reveal">
-            <div class="carte-image" style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#f87171)">
+            <div class="carte-image carte-image-kasa">
               <span class="badge-phare">★ Projet phare</span>
               <img src="images/kasa.png" alt="Aperçu du projet Kasa">
               <div class="carte-survol">
@@ -305,7 +305,7 @@
           </a>
 
           <a href="projets/mon-vieux-grimoire.html" class="carte-projet carte-projet-phare reveal delay-1">
-            <div class="carte-image" style="background:linear-gradient(135deg,#14532d,#16a34a,#4ade80)">
+            <div class="carte-image carte-image-grimoire">
               <span class="badge-phare">★ Projet phare</span>
               <img src="images/mon-vieux-grimoire.png" alt="Aperçu du projet Mon Vieux Grimoire">
               <div class="carte-survol">
@@ -340,8 +340,7 @@
         <div class="grille-projets">
 
           <div class="carte-projet reveal">
-            <div class="carte-image carte-image-statique"
-              style="background:linear-gradient(135deg,#0369a1,#0ea5e9,#38bdf8)">
+            <div class="carte-image carte-image-statique carte-image-booki">
               <img src="images/booki.png" alt="Aperçu du projet Booki">
             </div>
             <div class="carte-contenu">
@@ -365,8 +364,7 @@
           </div>
 
           <div class="carte-projet reveal delay-1">
-            <div class="carte-image carte-image-statique"
-              style="background:linear-gradient(135deg,#1e293b,#334155,#475569)">
+            <div class="carte-image carte-image-statique carte-image-sophie-bluel">
               <img src="images/sophie-bluel.png" alt="Aperçu du projet Sophie Bluel">
             </div>
             <div class="carte-contenu">
@@ -390,8 +388,7 @@
           </div>
 
           <div class="carte-projet reveal delay-2">
-            <div class="carte-image carte-image-statique"
-              style="background:linear-gradient(135deg,#1c1917,#44403c,#78716c)">
+            <div class="carte-image carte-image-statique carte-image-nina-carducci">
               <img src="images/nina-carducci.png" alt="Aperçu du projet Nina Carducci">
             </div>
             <div class="carte-contenu">
@@ -410,26 +407,6 @@
                   class="carte-lien-github" aria-label="GitHub">
                   <i class="fa-brands fa-github" aria-hidden="true"></i>
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carte-projet reveal delay-3">
-            <div class="carte-image carte-image-statique"
-              style="background:linear-gradient(135deg,#4c1d95,#7c3aed,#a78bfa)">
-              <img src="images/menu-maker.png" alt="Aperçu du projet Menu Maker">
-            </div>
-            <div class="carte-contenu">
-              <div class="carte-tags">
-                <span class="carte-tag">Agile</span>
-                <span class="carte-tag">Scrum</span>
-                <span class="carte-tag">Notion</span>
-              </div>
-              <h3 class="carte-titre">Menu Maker — Gestion de projet</h3>
-              <p class="carte-texte">Planification Agile complète : user stories, backlog Kanban, spécifications
-                techniques et présentation client.</p>
-              <div class="carte-pied carte-pied-liens">
-                <a href="projets/menu-maker.html" class="carte-lien">Voir le projet →</a>
               </div>
             </div>
           </div>
