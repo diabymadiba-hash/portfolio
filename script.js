@@ -134,7 +134,7 @@ scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior:
 const form       = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', async e => {
   e.preventDefault();
   const fname   = document.getElementById('fname').value.trim();
   const lname   = document.getElementById('lname').value.trim();
@@ -155,12 +155,25 @@ form.addEventListener('submit', e => {
   btn.textContent = 'Envoi en cours…';
   btn.disabled = true;
 
-  setTimeout(() => {
-    showStatus('✅ Message envoyé ! Je vous répondrai sous 24h.', 'ok');
-    form.reset();
+  try {
+    const reponse = await fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    });
+
+    if (reponse.ok) {
+      showStatus('✅ Message envoyé !', 'ok');
+      form.reset();
+    } else {
+      showStatus('Une erreur est survenue, veuillez réessayer.', 'err');
+    }
+  } catch (err) {
+    showStatus('Une erreur est survenue, veuillez réessayer.', 'err');
+  } finally {
     btn.innerHTML = '<i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Envoyer le message';
     btn.disabled = false;
-  }, 1500);
+  }
 });
 
 function showStatus(msg, type) {

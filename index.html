@@ -331,24 +331,24 @@
         </div>
         <div class="form-carte reveal delay-2">
           <h3 class="form-carte-titre">Envoyer un message</h3>
-          <form id="contactForm" novalidate>
+          <form id="contactForm" action="https://formspree.io/f/maqglwge" method="POST" novalidate>
             <div class="form-ligne">
               <div class="form-groupe">
                 <label class="form-label" for="fname">Prénom <span>*</span></label>
-                <input class="form-input" id="fname" type="text" placeholder="Jean" required>
+                <input class="form-input" id="fname" name="fname" type="text" placeholder="Jean" required>
               </div>
               <div class="form-groupe">
                 <label class="form-label" for="lname">Nom <span>*</span></label>
-                <input class="form-input" id="lname" type="text" placeholder="Dupont" required>
+                <input class="form-input" id="lname" name="lname" type="text" placeholder="Dupont" required>
               </div>
             </div>
             <div class="form-groupe">
               <label class="form-label" for="email">Email <span>*</span></label>
-              <input class="form-input" id="email" type="email" placeholder="jean@exemple.com" required>
+              <input class="form-input" id="email" name="email" type="email" placeholder="jean@exemple.com" required>
             </div>
             <div class="form-groupe">
               <label class="form-label" for="subject">Sujet <span>*</span></label>
-              <select class="form-select" id="subject" required>
+              <select class="form-select" id="subject" name="subject" required>
                 <option value="">Sélectionner un sujet</option>
                 <option>Mission freelance</option>
                 <option>Offre d'emploi / alternance</option>
@@ -358,7 +358,7 @@
             </div>
             <div class="form-groupe">
               <label class="form-label" for="message">Message <span>*</span></label>
-              <textarea class="form-textarea" id="message" placeholder="Décrivez votre demande..." required></textarea>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Décrivez votre demande..." required></textarea>
             </div>
             <button type="submit" class="form-submit">
               <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
