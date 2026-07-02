@@ -1,0 +1,67 @@
+[
+  {
+    "id": "kasa",
+    "titre": "Kasa — Location immobilière",
+    "description": "SPA React avec composants réutilisables, routing dynamique, galerie d'images et accordéons animés. Déployé sur Vercel.",
+    "tags": ["React", "React Router", "Sass", "Vite"],
+    "image": "images/kasa.png",
+    "imageAlt": "Aperçu du projet Kasa",
+    "gradientClass": "carte-image-kasa",
+    "phare": true,
+    "lienDetail": "projets/kasa.html",
+    "lienLive": "https://kasa-eight-sigma.vercel.app/",
+    "lienGithub": "https://github.com/diabymadiba-hash"
+  },
+  {
+    "id": "mon-vieux-grimoire",
+    "titre": "Mon Vieux Grimoire — Back-end",
+    "description": "API REST sécurisée (JWT, bcrypt) avec upload d'images Sharp/WebP et architecture MVC. Déployé sur Vercel.",
+    "tags": ["Node.js", "Express", "MongoDB", "JWT"],
+    "image": "images/mon-vieux-grimoire.png",
+    "imageAlt": "Aperçu du projet Mon Vieux Grimoire",
+    "gradientClass": "carte-image-grimoire",
+    "phare": true,
+    "lienDetail": "projets/mon-vieux-grimoire.html",
+    "lienLive": "https://back-end-d-un-site-de-notation-de-l.vercel.app/",
+    "lienGithub": "https://github.com/diabymadiba-hash"
+  },
+  {
+    "id": "booki",
+    "titre": "Booki — Agence de voyage",
+    "description": "Intégration pixel-perfect de la page d'accueil d'une agence de voyage à partir de maquettes Figma, entièrement responsive.",
+    "tags": ["HTML5", "CSS3", "Flexbox"],
+    "image": "images/booki.png",
+    "imageAlt": "Aperçu du projet Booki",
+    "gradientClass": "carte-image-booki",
+    "phare": false,
+    "lienDetail": "projets/booki.html",
+    "lienLive": "https://diabymadiba-hash.github.io/Projet-1-page-d-accueil-agences-de-voyage-avec-html-et-css/",
+    "lienGithub": "https://github.com/diabymadiba-hash/Projet-1-page-d-accueil-agences-de-voyage-avec-html-et-css"
+  },
+  {
+    "id": "sophie-bluel",
+    "titre": "Sophie Bluel — Portfolio architecte",
+    "description": "Site dynamique avec manipulation DOM, consommation d'API, authentification JWT et modale d'administration.",
+    "tags": ["JavaScript", "DOM", "API REST"],
+    "image": "images/sophie-bluel.png",
+    "imageAlt": "Aperçu du projet Sophie Bluel",
+    "gradientClass": "carte-image-sophie-bluel",
+    "phare": false,
+    "lienDetail": "projets/sophie-bluel.html",
+    "lienLive": "https://diabymadiba-hash.github.io/Portfolio-architecte-sophie-bluel-master/",
+    "lienGithub": "https://github.com/diabymadiba-hash/Portfolio-architecte-sophie-bluel-master"
+  },
+  {
+    "id": "nina-carducci",
+    "titre": "Nina Carducci — SEO & Débogage",
+    "description": "Audit complet, débogage JS, optimisation images et SEO on-page : score Lighthouse de 52 → 92/100.",
+    "tags": ["SEO", "Lighthouse", "Accessibilité"],
+    "image": "images/nina-carducci.png",
+    "imageAlt": "Aperçu du projet Nina Carducci",
+    "gradientClass": "carte-image-nina-carducci",
+    "phare": false,
+    "lienDetail": "projets/nina-carducci.html",
+    "lienLive": "https://diabymadiba-hash.github.io/Nina-Carducci-Dev-master/",
+    "lienGithub": "https://github.com/diabymadiba-hash/Nina-Carducci-Dev-master"
+  }
+]

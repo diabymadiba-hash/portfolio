@@ -45,6 +45,75 @@ const revealObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 reveals.forEach(el => revealObserver.observe(el));
 
+/* ===== PROJETS DYNAMIQUES ===== */
+
+const grillePhares = document.querySelector('.grille-projets-phares');
+const grilleAutres = document.querySelector('.grille-projets');
+const delaisReveal = ['', 'delay-1', 'delay-2', 'delay-3'];
+
+function carteProjetPhareHTML(projet, delai) {
+  return `
+    <a href="${projet.lienDetail}" class="carte-projet carte-projet-phare reveal ${delai}">
+      <div class="carte-image ${projet.gradientClass}">
+        <span class="badge-phare">★ Projet phare</span>
+        <img src="${projet.image}" alt="${projet.imageAlt}">
+        <div class="carte-survol">
+          <span class="survol-btn survol-btn-bleu">Voir le projet complet</span>
+        </div>
+      </div>
+      <div class="carte-contenu">
+        <div class="carte-tags">
+          ${projet.tags.map(tag => `<span class="carte-tag">${tag}</span>`).join('')}
+        </div>
+        <h3 class="carte-titre">${projet.titre}</h3>
+        <p class="carte-texte">${projet.description}</p>
+        <div class="carte-pied">
+          <span class="carte-lien">Voir le détail →</span>
+        </div>
+      </div>
+    </a>`;
+}
+
+function carteProjetHTML(projet, delai) {
+  return `
+    <div class="carte-projet reveal ${delai}">
+      <div class="carte-image carte-image-statique ${projet.gradientClass}">
+        <img src="${projet.image}" alt="${projet.imageAlt}">
+      </div>
+      <div class="carte-contenu">
+        <div class="carte-tags">
+          ${projet.tags.map(tag => `<span class="carte-tag">${tag}</span>`).join('')}
+        </div>
+        <h3 class="carte-titre">${projet.titre}</h3>
+        <p class="carte-texte">${projet.description}</p>
+        <div class="carte-pied carte-pied-liens">
+          <a href="${projet.lienLive}" target="_blank" rel="noopener" class="carte-lien">Voir le site →</a>
+          <a href="${projet.lienGithub}" target="_blank" rel="noopener" class="carte-lien-github" aria-label="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>`;
+}
+
+async function chargerProjets() {
+  try {
+    const reponse = await fetch('data/projets.json');
+    const projets = await reponse.json();
+    const phares = projets.filter(p => p.phare);
+    const autres = projets.filter(p => !p.phare);
+
+    grillePhares.innerHTML = phares.map((p, i) => carteProjetPhareHTML(p, delaisReveal[i] || '')).join('');
+    grilleAutres.innerHTML = autres.map((p, i) => carteProjetHTML(p, delaisReveal[i] || '')).join('');
+
+    document.querySelectorAll('#projects .reveal').forEach(el => revealObserver.observe(el));
+  } catch (err) {
+    console.error('Erreur de chargement des projets :', err);
+  }
+}
+
+chargerProjets();
+
 /* ===== BARRES DE COMPÉTENCES ===== */
 
 /* Applique la largeur depuis data-level au chargement de la page */
