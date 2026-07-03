@@ -34,7 +34,6 @@
     "imageAlt": "Aperçu du projet Booki",
     "gradientClass": "carte-image-booki",
     "phare": false,
-    "lienDetail": "projets/booki.html",
     "lienLive": "https://diabymadiba-hash.github.io/Projet-1-page-d-accueil-agences-de-voyage-avec-html-et-css/",
     "lienGithub": "https://github.com/diabymadiba-hash/Projet-1-page-d-accueil-agences-de-voyage-avec-html-et-css"
   },
@@ -47,7 +46,6 @@
     "imageAlt": "Aperçu du projet Sophie Bluel",
     "gradientClass": "carte-image-sophie-bluel",
     "phare": false,
-    "lienDetail": "projets/sophie-bluel.html",
     "lienLive": "https://diabymadiba-hash.github.io/Portfolio-architecte-sophie-bluel-master/",
     "lienGithub": "https://github.com/diabymadiba-hash/Portfolio-architecte-sophie-bluel-master"
   },
@@ -60,7 +58,6 @@
     "imageAlt": "Aperçu du projet Nina Carducci",
     "gradientClass": "carte-image-nina-carducci",
     "phare": false,
-    "lienDetail": "projets/nina-carducci.html",
     "lienLive": "https://diabymadiba-hash.github.io/Nina-Carducci-Dev-master/",
     "lienGithub": "https://github.com/diabymadiba-hash/Nina-Carducci-Dev-master"
   }
