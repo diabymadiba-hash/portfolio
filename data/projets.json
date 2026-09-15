@@ -1,5 +1,17 @@
 [
   {
+    "id": "all4one",
+    "titre": "AllForOneNow — Déménagement & débarras",
+    "description": "Plateforme de mise en relation entre particuliers pour des services de déménagement et de débarras, avec authentification Google et gestion des demandes en temps réel.",
+    "tags": ["React", "Node.js", "MongoDB", "Google OAuth"],
+    "image": "images/all4one.png",
+    "imageAlt": "Aperçu du projet AllForOneNow",
+    "gradientClass": "carte-image-all4one",
+    "phare": true,
+    "lienDetail": "https://all4one-chi.vercel.app",
+    "lienLive": "https://all4one-chi.vercel.app"
+  },
+  {
     "id": "kasa",
     "titre": "Kasa — Location immobilière",
     "description": "SPA React avec composants réutilisables, routing dynamique, galerie d'images et accordéons animés. Déployé sur Vercel.",
